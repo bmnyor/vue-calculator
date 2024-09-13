@@ -1,21 +1,27 @@
 <script setup>
-import DisplayPanelComponent from "./components/DisplayPanelComponent.vue";
-import KeyboardComponent from "./components/KeyboardComponent.vue";
-
+import TheKeyboard from './components/TheKeyboard.vue'
+import DisplayPanel from './components/DisplayPanel.vue'
 </script>
 
 <template>
-  <DisplayPanelComponent/>
-  <KeyboardComponent/>
+  <main>
+    <DisplayPanel />
+    <TheKeyboard />
+  </main>
 </template>
 
 <style>
+main {
+  margin: 0 auto;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  align-content: center;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
 }
 </style>
